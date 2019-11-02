@@ -1,0 +1,1361 @@
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+
+/* ################################# start Home Page ############################## */
+
+
+/* start navbar  */
+
+.main_navbar {
+    background-color: transparent!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f1f1f1;
+}
+
+.navbar_logo {
+    width: 150px;
+    height: 150px;
+    padding-top: 5px!important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover span {
+    border-bottom: 3px solid #303174;
+    padding-bottom: 5px;
+}
+
+.link_active {
+    border-bottom: 3px solid #303174;
+    padding-bottom: 5px;
+}
+
+
+/* start home section  */
+
+.home {
+    position: relative;
+}
+
+.header_Video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.home_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.home_layer {
+    /* background-color: rgba(255, 97, 34, 0.6); */
+    background-color: rgba(255, 86, 34, 0.6);
+    position: relative;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.header_txt a,
+.contact_btn {
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #303174;
+    font-size: 16px;
+    padding: 12px 40px;
+}
+
+.header_txt a:hover,
+.contact_btn:hover {
+    color: #FF604B;
+}
+
+
+/* end home section  */
+
+
+/* start introduce section  */
+
+.introduce {
+    padding-top: 40px;
+    scroll-padding-bottom: 40px;
+}
+
+.header {
+    margin: 30px 0px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    left: 45%;
+    top: 73%;
+    width: 10%;
+    height: 3px;
+    background-color: #ff5b00;
+}
+
+.introduce_item {
+    text-align: center;
+    padding: 20px;
+}
+
+.introduce_item img {
+    width: 100px;
+    height: 100px;
+    margin: 30px 0px;
+}
+
+.introduce_item h3 {
+    margin: 20px 0px;
+}
+
+.introduce_item a {
+    text-decoration: none;
+    color: #303174!important;
+    cursor: pointer;
+}
+
+.introduce_item p {
+    color: #989898;
+    margin-bottom: 30px;
+    padding: 0px 20px;
+}
+
+
+/* end introduce section  */
+
+
+/* start our places section  */
+
+.places_item img {
+    width: 200px;
+    height: 200px;
+    transform: rotate(25deg);
+    border-radius: 40px;
+    -webkit-box-shadow: 9px 12px 14px 1px rgba(206, 209, 217, .9), -4px 0px 19px 0px rgba(206, 209, 217, .9);
+    -moz-box-shadow: 9px 12px 14px 1px rgba(206, 209, 217, .9), -4px 0px 19px 0px rgba(206, 209, 217, .9);
+    box-shadow: 9px 12px 14px 1px rgba(206, 209, 217, .9), -4px 0px 19px 0px rgba(206, 209, 217, .9)
+}
+
+.places_item img {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.places_item img:hover {
+    transform: scale(.8) rotate(-5deg);
+    -webkit-transform: scale(.8) rotate(-2deg);
+    -moz-transform: scale(.8) rotate(-5deg);
+    -ms-transform: scale(.8) rotate(-5deg);
+    -o-transform: scale(.8) rotate(-5deg);
+}
+
+
+/* end our places section  */
+
+
+/* start show items section */
+
+.show_items {
+    background-image: url(../imgs/imgs/subtle-pattern-1.jpg);
+    background-size: 100% 100%;
+    padding-top: 35px!important;
+    padding-bottom: 35px!important;
+}
+
+.show_header:after {
+    top: 76%;
+}
+
+.flipcard {
+    position: relative;
+    perspective: 700px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    margin-bottom: 55px!important;
+    width: 100%;
+    height: 415px;
+}
+
+.flipcard_front,
+.flipcard_back {
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+
+.flipcard_front {
+    width: 75%;
+}
+
+.flipcard_front .show_item {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 6%;
+    background-color: white;
+    height: 100%;
+}
+
+.flipcard_front .show_item img {
+    border-radius: 6%;
+    -webkit-border-radius: 6%;
+    -moz-border-radius: 6%;
+    -ms-border-radius: 6%;
+    -o-border-radius: 6%;
+}
+
+.flipcard_front .show_item .show_content {
+    direction: rtl;
+    text-align: right;
+    padding: 20px;
+}
+
+.flipcard_front .show_item .show_content i {
+    color: #ff5b00 !important;
+    padding-left: 6px;
+}
+
+.flipcard_front .show_item .show_content p {
+    color: #989898;
+}
+
+.flipcard:hover .flipcard_front {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flipcard_back {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-color: hotpink!important;
+    width: 75%;
+    height: 100%;
+    border-radius: 6%;
+    text-align: center;
+}
+
+.flipcard:hover .flipcard_back {
+    -webkit-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+
+.flipcard_description {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.flipcard_description a {
+    text-decoration: none;
+    color: #303174!important;
+}
+
+.flipcard_description img {
+    width: 100px;
+    height: 100px;
+    margin: 30px 10px;
+}
+
+.more_btn {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .6);
+}
+
+
+/* end show items section */
+
+
+/* start contact section  */
+
+.contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url(../imgs/imgs/contact\ us.gif);
+    background-size: 100% 100%;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact_btn {
+    padding: 10px 30px;
+}
+
+.text_area textarea {
+    height: 120px!important;
+}
+
+
+/* end contact section  */
+
+
+/* start entering email input */
+
+.email_input {
+    background-color: #FF604B;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* end entering email input */
+
+
+/* start footer */
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    background: #7b4397;
+    /* fallback for old browsers */
+    background: linear-gradient(to left, #e03c47, #7b4397);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #e03c47, #7b4397);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.social i {
+    font-size: 25px;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.social i:hover {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+}
+
+.social i.instagram:hover {
+    color: #2C6A93!important;
+}
+
+.social i.facebook:hover {
+    color: #0056b3!important;
+}
+
+.social i.twitter:hover {
+    color: #1489ed!important;
+}
+
+.footer_ul1 ul {
+    list-style-type: none;
+}
+
+.footer_ul1 ul li {
+    margin: 5px 0px;
+    text-align: right;
+}
+
+.footer_ul1 ul li:hover a {
+    color: #FF604B
+}
+
+.footer_ul1 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_info p {
+    text-align: right!important;
+    padding-right: 10px;
+}
+
+
+/* end footeer */
+
+
+/* ################################# End  Home Page ############################## */
+
+
+/* ################################# start ask famouse questions page ############# */
+
+.ask_page_navbar {
+    background-color: #EB7636 !important;
+}
+
+.questions {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.ques_title:after {
+    height: 2px;
+}
+
+.card-header {
+    direction: rtl;
+    text-align: right;
+}
+
+.card-header h2 button {
+    color: #EB7D45;
+    text-decoration: none!important;
+}
+
+.card-header h2 button:hover {
+    color: #303174!important;
+}
+
+.accordion .card-body {
+    text-align: right;
+}
+
+
+/* ################################# end ask famouse questions page ####################################### */
+
+
+/* ################################# start  for selling page ####################################### */
+
+.questions {
+    background-image: url(../imgs/imgs/subtle-pattern-1.jpg);
+    background-size: 100% 100%;
+    padding-top: 35px!important;
+    padding-bottom: 35px!important;
+}
+
+.selected_link a {
+    color: #303174!important;
+}
+
+.pagination .page-item .page-link {
+    color: #eb7636;
+}
+
+
+/* dropdown menue  */
+
+.rtl {
+    direction: rtl;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.rtl .dropdown-menu-right {
+    text-align: right;
+}
+
+.dropdown_style {
+    background-color: #1A3263;
+    border-radius: 10rem;
+    padding: 10px 30px 10px 9px;
+    border: none;
+    color: #fff;
+    outline: none!important;
+}
+
+.dropdown_style .dropdown_style:hover {
+    color: #fff!important;
+}
+
+.dropdown-menu {
+    background-color: #1A3263;
+    color: #fff!important;
+}
+
+.rtl .dropdown-menu li a {
+    color: #fff!important;
+}
+
+.rtl .dropdown-menu li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.rtl .dropdown-menu li:hover {
+    background-color: #2fa9d8;
+    padding-right: 20px;
+}
+
+.rtl .dropdown-menu li a:hover {
+    text-decoration: none;
+}
+
+
+/* range slider  */
+
+.pull-left {
+    float: left;
+}
+
+
+/* .pull-right {
+    float: right;
+} */
+
+.clearfix:after,
+.clearfix:before {
+    content: '';
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+    display: block
+}
+
+.rangeslider,
+.rangeslider__fill {
+    display: block;
+    border-radius: 10px;
+}
+
+.rangeslider {
+    position: relative;
+}
+
+.rangeslider:after {
+    top: 50%;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 5px;
+    margin-top: -2.5px;
+    border-radius: 5px;
+    position: absolute;
+    background: #212131;
+}
+
+.rangeslider--horizontal {
+    width: 100%;
+    height: 28px;
+}
+
+.rangeslider--vertical {
+    width: 5px;
+    min-height: 150px;
+    max-height: 100%;
+}
+
+.rangeslider--disabled {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
+}
+
+.rangeslider__fill {
+    position: absolute;
+    background: #eb7636;
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+    top: 0;
+    height: 100%;
+}
+
+.rangeslider--vertical .rangeslider__fill {
+    bottom: 0;
+    width: 100%;
+}
+
+.rangeslider__handle {
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: -9px;
+    background: white;
+    position: absolute;
+    background: #eb7636;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.rangeslider__handle:active {
+    background: #eb7636;
+}
+
+.rangeslider__fill,
+.rangeslider__handle {
+    z-index: 1;
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+    top: 50%;
+    height: 5px;
+    margin-top: -2.5px;
+}
+
+
+/* Budget */
+
+.budget-wrap,
+.price_budget-wrap {
+    padding: 20px;
+    /* box-shadow: 0 25px 55px 0 rgba(0, 0, 0, .21), 0 16px 28px 0 rgba(0, 0, 0, .22); */
+    width: 80%;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.budget-wrap .header_budget .title,
+.price_budget-wrap .price_header_budget .price_title {
+    color: #303174!important;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.budget-wrap .header_budget .title .pull-right,
+.price_budget-wrap .price_header_budget .price_title .price_pull-right {
+    color: #eb7636;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.new_card {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.6);
+    border-radius: 6%;
+    background-color: white;
+    width: 80%;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.new_card img {
+    border-radius: 6%;
+}
+
+.newCard_content {
+    direction: rtl;
+    text-align: right;
+    padding: 20px;
+}
+
+.newCard_content i {
+    color: #ff5b00 !important;
+    padding-left: 6px;
+}
+
+
+/* ################################# end for selling page ####################################### */
+
+
+/* ################################# start who we are  page ####################################### */
+
+.we {
+    background-image: url(../imgs/imgs/about.jpg);
+    background-size: 100% 100%;
+    padding-top: 35px!important;
+    padding-bottom: 40px!important;
+    color: #fff;
+}
+
+.we h2:hover {
+    color: #eb7636;
+}
+
+.we_txt {
+    text-align: right;
+    direction: rtl;
+    font-size: 20px;
+    line-height: 1.988;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.we_btn {
+    padding: 15px 32px;
+    background-color: #1A3263;
+}
+
+.member {
+    width: 90%;
+    margin: 1.5rem auto;
+    box-shadow: 1px 3px 10px #888888;
+    border-radius: 7%;
+    -webkit-border-radius: 7%;
+    -moz-border-radius: 7%;
+    -ms-border-radius: 7%;
+    -o-border-radius: 7%;
+    overflow: hidden;
+}
+
+.member_content {
+    padding: 15px;
+}
+
+.member p,
+.member h3 {
+    direction: rtl;
+    text-align: right;
+}
+
+.member img {
+    border-top-right-radius: 7%;
+    border-top-left-radius: 7%;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.member:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+
+/* ################################# end who we are page ####################################### */
+
+
+/* ################################# start digla park  land  page ############################## */
+
+.up_nav {
+    padding-top: 62px;
+    padding-bottom: 30px;
+    background-color: #CACACA;
+}
+
+.up_btn a {
+    padding: 19px 60px;
+    background-color: #1A3263;
+}
+
+.menue {
+    padding: 15px 80px 15px 8px;
+    background-color: #808080
+}
+
+.land_menu:focus {
+    outline: none!important;
+}
+
+.menue .caret {
+    margin-right: 5rem!important;
+}
+
+.menue:hover {
+    color: white;
+}
+
+.land_menue {
+    background-color: #808080
+}
+
+.land_menue li:hover {
+    background-color: #0586b9!important;
+}
+
+.search_area {
+    position: relative;
+}
+
+.search_area input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: right;
+    outline: none!important;
+    border-radius: 1.8rem;
+    padding: 16px;
+}
+
+.search_area i {
+    position: absolute;
+    top: 39%;
+    left: 10%;
+    color: #808080
+}
+
+
+/* side bar */
+
+.land {
+    color: #1A3263;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.side_bar {
+    direction: rtl;
+    text-align: right;
+}
+
+.side_bar i {
+    color: #FFA500;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.contact_ask {
+    text-align: right;
+}
+
+.contact_ask a {
+    background-color: #eb7636;
+    padding: 17px 64px;
+    color: white;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+.link1:hover {
+    color: #1A3263
+}
+
+.link2 {
+    background-color: white!important;
+    border: 2px solid #1A3263;
+    color: #1A3263!important;
+}
+
+.link2:hover {
+    background-color: #1A3263!important;
+    color: #fff!important;
+}
+
+.details {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    direction: rtl;
+    text-align: right;
+}
+
+.land_title {
+    border-right: 4px solid #eb7636;
+    padding-right: 10px;
+}
+
+
+/* ################################# end digla park  land  page ############################### */
+
+
+/* ################################# start buying  page ############################### */
+
+.buying {
+    background-image: url(../imgs/imgs/service-page_02.jpg);
+}
+
+.buying_layer {
+    background-color: #8b8e90d4;
+    width: 100%;
+    height: 100%;
+    padding-top: 35px!important;
+    padding-bottom: 40px!important;
+    color: white;
+}
+
+.buildings {
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.buildings h2 {
+    color: #1A3263
+}
+
+.buildings .imgs {
+    margin: 30px auto;
+}
+
+.buildings .imgs img {
+    width: 250px;
+    margin: 20px 8px;
+    box-shadow: 1px 3px 10px #888888;
+    border-radius: 6%;
+    -webkit-border-radius: 6%;
+    -moz-border-radius: 6%;
+    -ms-border-radius: 6%;
+    -o-border-radius: 6%;
+}
+
+
+/* ################################# end buying  page ############################### */
+
+
+/*  Extra large devices (large desktops, 1200px and up) */
+
+@media (max-width: 1440px) {
+    .details,
+    .land_slider {
+        margin-right: 20px;
+    }
+    iframe {
+        margin-right: 20px;
+        width: 80%;
+    }
+    .buildings .imgs img {
+        margin: 20px 8px;
+    }
+}
+
+@media (max-width:1024px) {
+    .flip_card_container {
+        margin-left: 50px;
+    }
+    .new_card {
+        width: 95%;
+    }
+    .rtl {
+        width: 60%
+    }
+    .menue {
+        padding: 15px 27px 15px 7px;
+    }
+    .menue .caret {
+        margin-right: 4rem!important;
+    }
+    .land_slider {
+        margin-right: 20px;
+    }
+    .details,
+    iframe {
+        margin-right: 20px;
+    }
+    .footer_info img {
+        width: 65%;
+    }
+    .buildings .imgs img {
+        width: 250px;
+        margin: 25px 20px;
+    }
+}
+
+
+/*  large devices (large desktops, 992px and up) */
+
+@media (max-width:768px) {
+    /* .navbar-expand-md {
+        max-width: 86%!important;
+        margin: auto;
+        margin-left: 84px!important;
+    } */
+    .header_txt h1 {
+        font-size: 2rem;
+    }
+    .flip_card_container {
+        margin: auto;
+        margin-left: 40px!important;
+    }
+    .flipcard_front,
+    .flipcard_back {
+        width: 90%;
+    }
+    .flipcard {
+        height: 320px;
+    }
+    /* footer */
+    .social {
+        text-align: center!important;
+    }
+    .social i {
+        font-size: 20px!important;
+        padding: 7px!important;
+    }
+    .footer_info img {
+        width: 80%;
+    }
+    /* selling */
+    .rtl {
+        width: 60%;
+    }
+    .budget-wrap .header_budget .title {
+        font-size: 16px;
+    }
+    .budget-wrap .header_budget .title .pull-right {
+        font-size: 21px;
+    }
+    .cards_container {
+        padding-right: 10px;
+    }
+    .new_card {
+        width: 100%;
+    }
+    .responsive {
+        width: 100%;
+    }
+    .menue {
+        padding: 15px 30px 15px 7px;
+    }
+    .menue .caret {
+        margin-right: 3rem !important;
+    }
+    .up_btn a {
+        padding: 19px 50px;
+    }
+    .contact_ask a {
+        padding: 17px 40px;
+    }
+    .details,
+    .land_slider {
+        margin-right: 20px;
+    }
+    iframe {
+        width: 515px;
+        margin-right: 19px;
+    }
+    .buildings .imgs img {
+        margin: 20px 36px;
+    }
+}
+
+@media (max-width:425px) {
+    .navbar-collapse {
+        direction: rtl!important;
+        text-align: right;
+    }
+    .navbar_logo {
+        margin-right: 2rem!important;
+    }
+    .header_txt a {
+        padding: 10px 25px;
+    }
+    .header:after {
+        left: 41%;
+        top: 74%;
+        width: 20%;
+    }
+    .navbar_menue {
+        flex-direction: column-reverse;
+    }
+    .header_txt {
+        margin-left: 30px;
+    }
+    .header_txt h1 {
+        font-size: 23px;
+    }
+    .places_item {
+        margin-left: 10px;
+    }
+    .header {
+        font-size: 28px;
+    }
+    .show_items .flipcard {
+        left: 80px;
+        width: 90%;
+    }
+    .email_input h2 {
+        font-size: 19px;
+    }
+    /* footer */
+    .social {
+        margin-right: 21px;
+        margin-bottom: 20px;
+        text-align: right!important;
+    }
+    .footer_ul1 {
+        margin-right: 30px;
+        margin-bottom: 25px;
+    }
+    .footer_info img {
+        width: 200px;
+    }
+    .footer_info p {
+        padding: 20px;
+    }
+    /* selling page  */
+    .rtl {
+        margin-bottom: 2rem;
+    }
+    .new_card {
+        margin: auto;
+        margin-bottom: 30px!important;
+    }
+    .cards_container {
+        margin-top: 20px;
+    }
+    .menue {
+        padding: 15px 100px 15px 7px;
+    }
+    /* who we are  */
+    .we_txt p {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .header {
+        font-size: 25px;
+    }
+    /* digla land mark  */
+    .up_btn a {
+        padding: 19px 91px;
+    }
+    .responsive {
+        width: 60%;
+    }
+    .search_area {
+        width: 50%;
+        margin: auto;
+    }
+    .side_bar {
+        margin-right: 20px;
+    }
+    .contact_ask {
+        text-align: right;
+        margin-right: 15px;
+    }
+    .outline_btn {
+        margin-bottom: 30px;
+    }
+    iframe {
+        width: 330px;
+    }
+    .land_slider {
+        margin-left: 10px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 375px) {
+    .navbar-collapse {
+        direction: rtl!important;
+        text-align: right;
+    }
+    .navbar_logo {
+        margin-right: 2rem!important;
+    }
+    .header_txt a {
+        padding: 10px 25px;
+    }
+    .header:after {
+        left: 39%;
+        top: 74%;
+        width: 29%;
+    }
+    .navbar_menue {
+        flex-direction: column-reverse;
+    }
+    .header_txt {
+        margin-left: 30px;
+    }
+    .header_txt h1 {
+        font-size: 23px;
+    }
+    .places_item {
+        margin-left: 10px;
+    }
+    .header {
+        font-size: 28px;
+    }
+    .show_items .flipcard {
+        left: 80px;
+        width: 90%;
+    }
+    .email_input h2 {
+        font-size: 19px;
+    }
+    /* footer */
+    .social {
+        margin-right: 21px;
+        margin-bottom: 20px;
+    }
+    .footer_ul1 {
+        margin-right: 30px;
+        margin-bottom: 25px;
+    }
+    .footer_info img {
+        width: 200px;
+    }
+    .footer_info p {
+        padding: 20px;
+    }
+    /* selling page  */
+    .rtl {
+        margin-bottom: 2rem;
+    }
+    .new_card {
+        margin: auto;
+        margin-bottom: 30px!important;
+    }
+    .cards_container {
+        margin-top: 20px;
+    }
+    /* who we are  */
+    .we_txt p {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .header {
+        font-size: 25px;
+    }
+    /* digla land mark  */
+    .up_btn a {
+        padding: 19px 91px;
+    }
+    .responsive {
+        width: 60%;
+    }
+    .search_area {
+        width: 63%;
+        margin: auto;
+    }
+    .side_bar {
+        margin-right: 20px;
+    }
+    .contact_ask {
+        text-align: right;
+        margin-right: 15px;
+    }
+    .outline_btn {
+        margin-bottom: 30px;
+    }
+    iframe {
+        width: 330px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width:320px) {
+    .navbar-collapse {
+        direction: rtl!important;
+        text-align: right;
+    }
+    .navbar_logo {
+        margin-right: 2rem!important;
+    }
+    .header_txt h1 {
+        font-size: 25px;
+    }
+    .header_txt a {
+        padding: 10px 25px;
+    }
+    .header:after {
+        left: 39%;
+        top: 74%;
+        width: 29%;
+    }
+    .navbar_menue {
+        flex-direction: column-reverse;
+    }
+    .contact h2 {
+        font-size: 25px;
+    }
+    .text_area textarea {
+        height: 90px!important;
+    }
+    .email_input h2 {
+        font-size: 20px;
+    }
+    .flipcard {
+        left: 12%;
+    }
+    .budget-wrap {
+        margin-bottom: 35px;
+    }
+    .rtl {
+        width: 56%;
+    }
+    .responsive {
+        width: 76%;
+    }
+    /* footer */
+    .social {
+        margin-right: 21px;
+        margin-bottom: 20px;
+    }
+    .footer_ul1 {
+        margin-right: 30px;
+        margin-bottom: 25px;
+    }
+    .footer_info img {
+        width: 200px;
+    }
+    /* selling */
+    .rtl {
+        text-align: center;
+    }
+    .new_card {
+        margin: auto;
+        margin-bottom: 30px!important;
+    }
+    .cards_container {
+        margin-top: 20px;
+    }
+    /* who we are  */
+    .we_txt p {
+        font-size: 14px;
+    }
+    .header {
+        font-size: 25px;
+    }
+    .we_btn {
+        padding: 13px 16px;
+        font-size: 15px;
+    }
+    /* digla land mark  */
+    .up_btn a {
+        padding: 19px 91px;
+    }
+    .search_area {
+        width: 75%;
+        margin: auto;
+    }
+    .side_bar {
+        margin-right: 20px;
+    }
+    .contact_ask {
+        text-align: right;
+        margin-right: 15px;
+    }
+    .outline_btn {
+        margin-bottom: 30px;
+    }
+    iframe {
+        width: 270px;
+    }
+}

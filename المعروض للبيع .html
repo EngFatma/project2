@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> المعروض للبيع </title>
+    <!-- font family link -->
+    <link href="https://fonts.googleapis.com/css?family=Tajawal&display=swap" rel="stylesheet">
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark main_navbar ask_page_navbar">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav navbar_menue mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#"> <span class="bottom_line">المدونة</span> </a>
+                </li>
+                <li class="nav-item selected_link">
+                    <a class="nav-link" href="المعروض للبيع .html"><span class="bottom_line">المعروض للبيع</span>  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="الاسئلة الشائعة.html"><span class="bottom_line">الاسئلة الشائعة</span> </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="mx-auto order-0 .navbar_logo">
+            <a class="navbar-brand mx-auto pt-2" href="#">
+                <img class="navbar_logo " src="assets/imgs/imgs/logo2.png" alt="logo">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav navbar_menue ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="من نحن.html"> <span class="bottom_line">من نحن</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span class="bottom_line">تواصل معنا</span> </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link " href="index.html"> <span class="bottom_line">الرئيسية</span> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- end navbar  -->
+    <!-- start famous question section  -->
+    <section class="questions">
+        <div class="container-fluid">
+            <h2 class="header text-center  ques_title">المعروض للبيع </h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- dropdown menue -->
+                    <div class="dropdown rtl ">
+                        <button class="btn btn-default dropdown-toggle dropdown_style " type="button" id="dropdownMenu1" data-toggle="dropdown">
+                              نوع العقار 
+                              <span class="caret mr-3"></span>
+                            </button>
+
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">نوع العقار </a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">شقق</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">فيلات</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">شاليهات</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">سكنى</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">تجارى</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">كومباوند</a></li>
+                            <!-- <li role="presentation" class="divider"></li> -->
+
+                        </ul>
+                    </div>
+                    <!-- dropdown menue -->
+                    <div class="dropdown rtl ">
+                        <button class="btn btn-default dropdown-toggle dropdown_style pr-5 " type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                      للبيع
+                                      <span class="caret mr-3"></span>
+                                    </button>
+
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dLabel">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">نوع العقار </a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">شقق</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">فيلات</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">شاليهات</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">سكنى</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">تجارى</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">كومباوند</a></li>
+                            <!-- <li role="presentation" class="divider"></li> -->
+
+                        </ul>
+                    </div>
+                    <!-- range input -->
+                    <div class="budget-wrap">
+                        <div class="budget">
+                            <div class="header_budget">
+                                <div class="title clearfix">
+                                    <span class="pull-right"></span> :المساحة بالمتر
+                                </div>
+                            </div>
+                            <div class="content">
+                                <input id="area_inp" type="range" min="1" max="100" value="20" data-rangeslider>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- price -->
+                    <div class="price_budget-wrap">
+                        <div class="price_budget">
+                            <div class="price_header_budget">
+                                <div class="price_title clearfix">
+                                    <span class="price_pull-right"></span> :السعر بالجنيه
+                                </div>
+                            </div>
+                            <div class="price_content">
+                                <input id="price_inp" type="range" min="100" max="10000" value="3200" data-rangeslider>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end price -->
+                    <div class="bottom_btn text-center mb-3">
+                        <a href="#" class="badge badge-pill  contact_btn  text-center mx-auto ">ابحث</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row cards_container">
+                        <div class="col-md-4 ">
+                            <div class="new_card">
+                                <img class="img-fluid" src="assets/imgs/imgs/flat2.jpg">
+                                <div class="newCard_content">
+                                    <p> <i class="fas fa-map-marker"></i> القاهرة التجمع الخامس شارع التسعين </p>
+                                    <p> <i class="fas fa-money-bill-wave-alt"></i> 1,000,000
+                                    </p>
+                                    <p><i class="fas fa-lightbulb"></i> ايجار
+                                    </p>
+                                </div>
+                                <div class="new_btn text-center mb-3">
+                                    <a href="دجلة لاند مارك .html" class="badge badge-pill  contact_btn  text-center mx-auto ">المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="col-md-4  ">
+                            <div class="new_card">
+                                <img class="img-fluid" src="assets/imgs/imgs/flat2.jpg">
+                                <div class="newCard_content">
+                                    <p> <i class="fas fa-map-marker"></i> القاهرة التجمع الخامس شارع التسعين </p>
+                                    <p> <i class="fas fa-money-bill-wave-alt"></i> 1,000,000
+                                    </p>
+                                    <p><i class="fas fa-lightbulb"></i> ايجار
+                                    </p>
+                                </div>
+                                <div class="new_btn text-center mb-3">
+                                    <a href="دجلة لاند مارك .html" class="badge badge-pill  contact_btn  text-center mx-auto ">المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="col-md-4  ">
+                            <div class="new_card">
+                                <img class="img-fluid" src="assets/imgs/imgs/flat2.jpg">
+                                <div class="newCard_content">
+                                    <p> <i class="fas fa-map-marker"></i> القاهرة التجمع الخامس شارع التسعين </p>
+                                    <p> <i class="fas fa-money-bill-wave-alt"></i> 1,000,000
+                                    </p>
+                                    <p><i class="fas fa-lightbulb"></i> ايجار
+                                    </p>
+                                </div>
+                                <div class="new_btn text-center mb-3">
+                                    <a href="دجلة لاند مارك .html" class="badge badge-pill  contact_btn  text-center mx-auto ">المزيد</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="col-md-4  ">
+                            <div class="new_card">
+                                <img class="img-fluid" src="assets/imgs/imgs/flat2.jpg">
+                                <div class="newCard_content">
+                                    <p> <i class="fas fa-map-marker"></i> القاهرة التجمع الخامس شارع التسعين </p>
+                                    <p> <i class="fas fa-money-bill-wave-alt"></i> 1,000,000
+                                    </p>
+                                    <p><i class="fas fa-lightbulb"></i> ايجار
+                                    </p>
+                                </div>
+                                <div class="new_btn text-center mb-3">
+                                    <a href="دجلة لاند مارك .html" class="badge badge-pill  contact_btn  text-center mx-auto ">المزيد</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="col-md-4 ">
+                            <div class="new_card">
+                                <img class="img-fluid" src="assets/imgs/imgs/flat2.jpg">
+                                <div class="newCard_content">
+                                    <p> <i class="fas fa-map-marker"></i> القاهرة التجمع الخامس شارع التسعين </p>
+                                    <p> <i class="fas fa-money-bill-wave-alt"></i> 1,000,000
+                                    </p>
+                                    <p><i class="fas fa-lightbulb"></i> ايجار
+                                    </p>
+                                </div>
+                                <div class="new_btn text-center mb-3">
+                                    <a href="دجلة لاند مارك .html" class="badge badge-pill  contact_btn  text-center mx-auto ">المزيد</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="col-md-4  ">
+                            <div class="new_card">
+                                <img class="img-fluid" src="assets/imgs/imgs/flat2.jpg">
+                                <div class="newCard_content">
+                                    <p> <i class="fas fa-map-marker"></i> القاهرة التجمع الخامس شارع التسعين </p>
+                                    <p> <i class="fas fa-money-bill-wave-alt"></i> 1,000,000
+                                    </p>
+                                    <p><i class="fas fa-lightbulb"></i> ايجار
+                                    </p>
+                                </div>
+                                <div class="new_btn text-center mb-3">
+                                    <a href="دجلة لاند مارك .html" class="badge badge-pill  contact_btn  text-center mx-auto ">المزيد</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--pagination-->
+                        <div class="col">
+
+                            <nav aria-label="Page navigation example text-center mx-auto">
+
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- start famous question section  -->
+    <!-- start footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="social text-right">
+                        <i class="fab fa-twitter twitter "></i>
+                        <i class="fab fa-facebook-f facebook"></i>
+                        <i class="fab fa-instagram instagram"></i>
+
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer_ul1">
+                        <ul>
+                            <li><a href="#"> روابط اخرى </a></li>
+                            <li><a href="#"> اشتراك الشركات  </a></li>
+                            <li><a href="#"> تواصل معنا  </a></li>
+                            <li><a href="#"> الأحكام والشروط </a></li>
+                            <li><a href="#"> احدث العقارات  </a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <div class="footer_ul1">
+                        <ul>
+                            <li><a href="#"> خدماتنا </a></li>
+                            <li><a href="#"> تقييم عقارى  </a></li>
+                            <li><a href="#"> دليل الأسعار  </a></li>
+                            <li><a href="#"> دليل كومباوند </a></li>
+                            <li><a href="#"> دراسات وابحاث  </a></li>
+                            <li><a href="#"> اعلن عن عقارك </a></li>
+                            <li><a href="#"> مؤشر الأسطورة  </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-right ">
+                    <div class="footer_info mr-3">
+                        <img class="img-fluid" src="assets/imgs/imgs/footer-logo.png">
+
+                        <p> خدمات الاسطورة تساعدك على بيع وشراء العقارات بسهولة </p>
+                        <p>بالاضافةالى تزويدك بمعلومات اساسيةلاتخاذواحد من اهم القرارات تاماليه فى حياتك</p>
+                    </div>
+                </div>
+            </div>
+            <!--end row   -->
+        </div>
+        <!-- end container  -->
+    </footer>
+    <!-- end footer  -->
+
+
+
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js "></script>
+    <script src="assets/js/bootstrap.min.js "></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
